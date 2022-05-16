@@ -34,6 +34,8 @@ body {
 }
 
 .slider-content {
+  border-radius: 1.5vh;
+  border: 0.01rem solid #4B5E66;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -50,13 +52,17 @@ body {
 }
 
 .slider-bottom {
-  width: 30rem;
+  width: 52rem;
   display: flex;
   column-gap: 1rem;
   row-gap: 2rem;
   flex-direction: row-reverse;
   align-items: flex-start;
   justify-content: space-between;
+  box-shadow: 0 0 0.6em 0.1em rgb(0 0 0 / 30%);
+  border-radius: 4vh;
+  border: 0.01rem solid #4B5E66;
+  padding: 0 2rem 0;
 }
 
 .controls {
@@ -65,8 +71,8 @@ body {
 }
 
 .control {
-  padding: 1em;
-  margin: 0.5vh;
+  padding: 1rem 0.7em;
+  margin: 0.3vh;
   cursor: pointer;
 }
 
@@ -87,7 +93,7 @@ body {
 }
 
 .control:active .control-btn {
-  box-shadow: 0 0 0.09rem 0.06arem rgba(255, 241, 181, 0.855);
+  box-shadow: 0 0 0.09rem 0.06rem rgba(255, 241, 181, 0.855);
 }
 
 .slider-radio-btn {
@@ -119,7 +125,10 @@ p {
 input#btn1:checked ~ .slider-bottom > .controls > label[for="btn1"] > .control-btn,
 input#btn2:checked ~ .slider-bottom > .controls > label[for="btn2"] > .control-btn,
 input#btn3:checked ~ .slider-bottom > .controls > label[for="btn3"] > .control-btn,
-input#btn4:checked ~ .slider-bottom > .controls > label[for="btn4"] > .control-btn {
+input#btn4:checked ~ .slider-bottom > .controls > label[for="btn4"] > .control-btn,
+input#btn5:checked ~ .slider-bottom > .controls > label[for="btn5"] > .control-btn,
+input#btn6:checked ~ .slider-bottom > .controls > label[for="btn6"] > .control-btn,
+input#btn7:checked ~ .slider-bottom > .controls > label[for="btn7"] > .control-btn {
     background-color: #f8d57e;
     border: #f8d57e;
     box-shadow: 0 0 0.07rem 0.05rem rgba(0, 0, 0, 0.452);
@@ -137,6 +146,15 @@ input#btn3:checked ~ .slider-content > .slider {
 input#btn4:checked ~ .slider-content > .slider {
   transform: translate(-300%);
 }
+input#btn5:checked ~ .slider-content > .slider {
+  transform: translate(-400%);
+}
+input#btn6:checked ~ .slider-content > .slider {
+  transform: translate(-500%);
+}
+input#btn7:checked ~ .slider-content > .slider {
+  transform: translate(-600%);
+}
 
 input#btn1:checked ~ .slider-bottom > .text-container > .slider-text {
   transform: translateY(0);
@@ -149,4 +167,13 @@ input#btn3:checked ~ .slider-bottom > .text-container > .slider-text {
 }
 input#btn4:checked ~ .slider-bottom > .text-container > .slider-text {
   transform: translateY(-300%);
+}
+input#btn5:checked ~ .slider-bottom > .text-container > .slider-text {
+  transform: translateY(-400%);
+}
+input#btn6:checked ~ .slider-bottom > .text-container > .slider-text {
+  transform: translateY(-500%);
+}
+input#btn7:checked ~ .slider-bottom > .text-container > .slider-text {
+  transform: translateY(-600%);
 }
