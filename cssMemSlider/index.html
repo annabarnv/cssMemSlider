@@ -6,20 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mem-slider</title>
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
- <main>
+ <main class="main">
   <div class="slider-container">
+    <input type="radio" name="slide" id="btn1" class="slider-radio-btn">
+    <input type="radio" name="slide" id="btn2" class="slider-radio-btn">
+    <input type="radio" name="slide" id="btn3" class="slider-radio-btn">
+    <input type="radio" name="slide" id="btn4" class="slider-radio-btn">
     <div class="slider-content">
-      <input type="radio" name="slide" id="btn1" class="slider-radio-btn">
-      <input type="radio" name="slide" id="btn2" class="slider-radio-btn">
-      <input type="radio" name="slide" id="btn3" class="slider-radio-btn">
-      <input type="radio" name="slide" id="btn4" class="slider-radio-btn">
-          <div class="slider"><img src="./assets/img/1.jpg" alt="meme"></div>
-          <div class="slider"><img src="./assets/img/2.jpg" alt="meme"></div>
-          <div class="slider"><img src="./assets/img/3.jpeg" alt="meme"></div>
-          <div class="slider"><img src="./assets/img/4.jpeg" alt="meme"></div>
+      <div class="slider"><img src="./assets/img/1.jpg" alt="meme" width="500" height="500"></div>
+      <div class="slider"><img src="./assets/img/2.jpg" alt="meme" width="500" height="500"></div>
+      <div class="slider"><img src="./assets/img/3.jpeg" alt="meme" width="500" height="500"></div>
+      <div class="slider"><img src="./assets/img/4.jpeg" alt="meme" width="500" height="500"></div>
     </div>
     <div class="slider-bottom">
       <div class="controls">
@@ -29,7 +32,7 @@
         <label for="btn4" class="control"><span class="control-btn"></span></label>
       </div>
       <div class="text-container">
-        <p class="slider-text">Когда часто коммтишь в GitHub</p>
+        <p class="slider-text">Когда часто коммитишь в GitHub</p>
         <p class="slider-text">Конечно, а потом еще написать код, который проверяет код, который проверяет код... Ну вы поняли.</p>
         <p class="slider-text">When I tell someone that I'm learning programming</p>
         <p class="slider-text">Process optimization</p>
