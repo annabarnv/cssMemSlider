@@ -52,8 +52,8 @@ body {
 }
 
 img {
-  width: 500px;
-  height: 500px;
+  width: 31rem;
+  height: 31rem;
 }
 
 .slider-bottom {
@@ -98,7 +98,9 @@ img {
 }
 
 .control:active .control-btn {
-  box-shadow: 0 0 0.09rem 0.06rem rgba(255, 241, 181, 0.855);
+  transition: all 0.9s;
+  transform: scale(2);
+  box-shadow: 0 0 0.2rem 0.06rem rgba(255, 241, 181, 0.855);
 }
 
 .slider-radio-btn {
@@ -211,8 +213,8 @@ input#btn7:checked ~ .slider-bottom > .text-container > .slider-text {
 
 @media (max-width: 530px) {
   img {
-    width: 450px;
-    height: 450px;
+    width: 28rem;
+    height: 28rem;
   }
 .slider-content {
   width: 28rem;
@@ -222,8 +224,8 @@ input#btn7:checked ~ .slider-bottom > .text-container > .slider-text {
 
 @media (max-width: 470px) {
   img {
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
   }
 .slider-content {
   width: 25rem;
@@ -237,8 +239,8 @@ input#btn7:checked ~ .slider-bottom > .text-container > .slider-text {
 
 @media (max-width: 420px) {
   img {
-    width: 375px;
-    height: 375px;
+    width: 23.5rem;
+    height: 23.5rem;
   }
 .slider-content {
   width: 23.5rem;
@@ -248,8 +250,8 @@ input#btn7:checked ~ .slider-bottom > .text-container > .slider-text {
 
 @media (max-width: 390px) {
   img {
-    width: 350px;
-    height: 350px;
+    width: 22rem;
+    height: 22rem;
   }
 .slider-content {
   width: 22rem;
@@ -259,8 +261,8 @@ input#btn7:checked ~ .slider-bottom > .text-container > .slider-text {
 
 @media (max-width: 370px) {
   img {
-    width: 320px;
-    height: 320px;
+    width: 20rem;
+    height: 20rem;
   }
 .slider-content {
   width: 20rem;
@@ -270,8 +272,8 @@ input#btn7:checked ~ .slider-bottom > .text-container > .slider-text {
 
 @media (max-width: 355px) {
   img {
-    width: 280px;
-    height: 280px;
+    width: 17.5rem;
+    height: 17.5rem;
   }
 .slider-content {
   width: 17.5rem;
